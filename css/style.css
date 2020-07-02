@@ -858,9 +858,9 @@ header .container .header-elements .language a:hover {
   left: 0;
   background-color: white;
   width: 100vw;
-  min-height: 100vh;
+  max-height: 100vh;
   z-index: +1;
-  display: block;
+  overflow-y: initial;
 }
 
 #works .works-modal .w-content {
@@ -868,19 +868,19 @@ header .container .header-elements .language a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 700px;
-  overflow-y: initial;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 #works .works-modal .w-content .container {
   padding: 0;
-  overflow-y: auto;
+  max-height: 100vh;
 }
 
 #works .works-modal .w-content .container .w-title {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 60px;
   padding: 0 70px;
   justify-content: space-between;
@@ -914,7 +914,6 @@ header .container .header-elements .language a:hover {
 
 #works .works-modal .w-content .container .w-image img {
   margin-bottom: 30px;
-  height: 200px;
 }
 
 #works .works-modal .w-content .container .w-text {
