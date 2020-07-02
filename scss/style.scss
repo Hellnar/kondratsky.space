@@ -748,16 +748,19 @@ header {
         width: 100vw;
         min-height: 100vh;
         z-index: +1;
+        display: block;
 
         .w-content {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100%;
+            height: 700px;
+            overflow-y: initial;
 
             .container {
                 padding: 0;
+                overflow-y: auto;
 
                 .w-title {
                     display: flex;

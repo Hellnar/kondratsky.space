@@ -52,10 +52,14 @@ document.querySelector(".works-modal").style.display = "none"
 
 function openWorks() {
     document.querySelector(".works-modal").style.display = "block"
+    document.body.style.position = "fixed"
+    document.body.style.top = `-${scrollY}`
 }
 
 function closeWorks() {
     document.querySelector(".works-modal").style.display = "none"
+    document.body.style.position = ""
+    document.body.style.top = ""
 }
 
 // PROMO SECRET

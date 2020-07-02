@@ -860,6 +860,7 @@ header .container .header-elements .language a:hover {
   width: 100vw;
   min-height: 100vh;
   z-index: +1;
+  display: block;
 }
 
 #works .works-modal .w-content {
@@ -867,11 +868,13 @@ header .container .header-elements .language a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 700px;
+  overflow-y: initial;
 }
 
 #works .works-modal .w-content .container {
   padding: 0;
+  overflow-y: auto;
 }
 
 #works .works-modal .w-content .container .w-title {
