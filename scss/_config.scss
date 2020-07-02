@@ -1,0 +1,161 @@
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 60px;
+    color: #ff7683;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 70px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.order-button, .bro-button, .send-button {
+    margin: 0 70px;
+
+    a {
+        background: rgb(242,113,154);
+        background: linear-gradient(90deg, rgba(242,113,154,1) 0%, rgba(255,147,115,1) 100%);
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 8px 30px;
+    }
+
+    a:hover {
+        background: rgb(255,147,115);
+        background: linear-gradient(90deg, rgba(255,147,115,1) 0%, rgba(242,113,154,1) 100%);
+    }
+
+    a:active {
+        background: none;
+        background-color: #35485b;
+    }
+
+    button {
+        background: rgb(242,113,154);
+        background: linear-gradient(90deg, rgba(242,113,154,1) 0%, rgba(255,147,115,1) 100%);
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 8px 30px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+    }
+
+    button:hover {
+        background: rgb(255,147,115);
+        background: linear-gradient(90deg, rgba(255,147,115,1) 0%, rgba(242,113,154,1) 100%);
+        cursor: pointer;
+    }
+}
+
+.btn-nomargin {
+    margin: 0
+}
+
+.dont-push {
+
+    button {
+        background-color: #fff;
+        color: #D9D9D9;
+        font-weight: 700;
+        font-size: 16px;
+        padding: 8px 30px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+        box-shadow: 0px 2px 5px rgba(53, 72, 91, 0.1);
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #f7f7f7;
+    }
+}
+
+
+.text-a {
+    color: #68c4f7;
+}
+
+.text-a:hover {
+    color: #86919d;
+}
+
+.add-file {
+    font-size: 18px;
+    font-weight: 700;
+    color: #35485b;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    outline: none;
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+.add-file:hover {
+    color: #68c4f7;
+    cursor: pointer;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

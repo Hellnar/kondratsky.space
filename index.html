@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon_space.ico" type="image/x-icon">
+    <title>Kondratsky</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <div class="header-elements">
+                <div class="social">
+                    <a href="https://t.me/d_vovk" target="_blank"><i class="fab fa-telegram-plane"></i>Обсудити</a>
+                </div>
+                <div class="order-button">
+                    <button onclick="orderModal()">Замовити</button>
+                </div>
+                <div class="language">
+                    <a href="#"><i class="fas fa-globe-europe"></i>ua</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="intro">
+        <div class="container">
+            <div class="intro-left">
+                <h1>Повітряний дизайн,</h1>
+                <h3>від якого хочеться літ<span>а</span><span>т</span><span>и</span></h3>
+                <ul>
+                    <li>дизайн та розробка сайтів, інтернет-магазинів, landing page</li>
+                    <li>розробка мобільних додатків</li>
+                    <li>дизайн логотипів та різних дрібниць для вашого проекту</li>
+                    <li>безкоштовна консультація</li>
+                </ul>
+            </div>
+            <div class="intro-right">
+                <img src="img/intro.jpg" alt="intro">
+                <div class="planet-box">
+                    <img class='planet' src="img/planet.png" alt="planet">
+                </div>
+            </div>
+        </div>
+
+        <div id="order-modal" class="order-modal">
+            <div class="order-content">
+                <div class="order-title">
+                    <h3>Швидке замовлення</h3>
+                    <button onclick="closeModal()"><i class="fas fa-times"></i></button>
+                </div>
+                <form action="https://formspree.io/mpzyjbbo" method="POST">
+                    <div class="order-inputs">
+                        <input type="text" name="name" placeholder="Ім'я">
+                        <input type="email" name="_replyto" placeholder="E-mail">
+                    </div>
+                    <textarea rows="8" name="message" placeholder="Повідомлення"></textarea>
+                    <!--<button class="add-file"><i class="fas fa-plus"></i><span>Додати файл</span></button>-->
+                    <div class="send-button">
+                        <button type="submit">Вiдправити</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="opm">
+        <div class="container">
+            <div class="opm-letters">
+                <div class="letter">
+                    <div class="letter-left">
+                        <p>О</p>
+                    </div>
+                    <div class="letter-right">
+                        <p>— оригінальність</p>
+                        <p>Прості небанальні рішення,<br> 
+                            якими зручно користуватись</p>
+                    </div>
+                </div>
+                <div class="letter">
+                    <div class="letter-left">
+                        <p>П</p>
+                    </div>
+                    <div class="letter-right">
+                        <p>— повітря</p>
+                        <p>Чисті світлі проекти<br>  
+                            без інформаційних шумів</p>
+                    </div>
+                </div>
+                <div class="letter">
+                    <div class="letter-left">
+                        <p>М</p>
+                    </div>
+                    <div class="letter-right">
+                        <p>— магія</p>
+                        <p>Таємні технології дизайну<br>  
+                            та front-end розробок</p>
+                    </div>
+                </div>
+            </div>
+            <div class="money-earned">
+                Грошей зароблено: <span>000000</span> грн <span>00</span> коп
+            </div>
+            <div class="money-earned-bar">
+                <div class="progress-bar">
+                    <div class="progress-done"></div>
+                </div>
+            </div>
+            <div class="opm-cta">
+                <p>Станьте першим клієнтом і отримайте знижку</p>
+            </div>
+            <div class="order-button">
+                <button onclick="orderModal()">Замовити</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="promo">
+        <div class="container">
+            <div class="promo-left">
+                <img src="img/tea.jpg" alt="tea">
+            </div>
+            <div class="promo-right">
+                <div id="promo-before" class="promo-before">
+                    <h2>Ui/Ux дизайн</h2>
+                    <div  class="promo-description-box">
+                        <div class="promo-description">
+                            <p>Ui/Ux прототипування та розробки.</p>
+                            <p>Наша фiшка - продуманний функцiонал вашого проекту.</p>
+                        </div>
+                    </div>
+                    <div class="dont-push">
+                        <button onclick="promoSecret()">Не натискати</button>
+                    </div>
+                </div>
+
+                <div id="promo-after" class="promo-after">
+                    <h2>Ui/Ux дизайн</h2>
+                    <div  class="promo-description-box">
+                        <div class="promo-secret">
+                            <img src="img/secret_word.png" alt="secret">
+                        </div>
+                        <div class="promo-description">
+                            <p>- ваше таємне слово на 10% знижку.</p>
+                            <p>Вкажiть його при замовленнi.</p>
+                        </div>
+                    </div>
+                    <div class="order-button btn-nomargin">
+                        <button onclick="orderModal()">Замовити</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <div id="sliderZero" class="team-box fade">
+                <div class="team-left">
+                    <img src="img/person1.jpg" alt="person">
+                </div>
+                <div class="team-right">
+                    <div class="team-title-slider">
+                        <div class="team-title">
+                            <h2>Хто ми є?</h2>
+                        </div>
+                        <div class="team-slider">
+                            <button class="slider-disabled" onclick="decrease()"><img src="img/arrow_left.svg" alt="arrow-left"></button>
+                            <button onclick="increase()"><img src="img/arrow_right.svg" alt="arrow-right"></button>
+                        </div>
+                    </div>
+                    <h5>Дмитро Кондрацький</h5>
+                    <div class="team-pos-loc">
+                        <p>ui/ux designer</p>
+                        <div class="team-country">
+                            <p>Київ, Україна</p>
+                            <img src="img/icon_ukraine.svg" alt="flag ukraine">
+                        </div>
+                    </div>
+                    <div class="team-quote">
+                        <img src="img/icon_guote.svg" alt="quote">
+                        <p>Хороші ідеї приходять з жартами. Абстрагуйтесь і уявіть, ніби вашим проектом користуватиметься людина, яка вперше побачила комп’ютер і подумайте, які елементи можна змінити. А ми — залюбки вам допоможемо.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sliderOne" class="team-box fade">
+                <div class="team-left">
+                    <img src="img/team-welcome.jpg" alt="person">
+                </div>
+                <div class="team-right">
+                    <div class="team-title-slider">
+                        <div class="team-title">
+                            <h2>Хочеш в команду?</h2>
+                        </div>
+                        <div class="team-slider">
+                            <button onclick="decrease()"><img src="img/arrow_left.svg" alt="arrow-left"></button>
+                            <button class="slider-disabled" onclick="increase()"><img src="img/arrow_right.svg" alt="arrow-right"></button>
+                        </div>
+                    </div>
+                    <p>Якщо ти — дизайнер, менеджер, front-end розробник — приєднуйся у веселу команду. 
+                        Ми працюємо дистанційно, без прив’язки до тісного офісу.</p>
+                    <p>Про нас <a class="text-a" href="#">пишуть</a>, що ми супер гуд. Хіба не фантастика?</p>
+                    <div class="bro-button">
+                        <a href="https://t.me/d_vovk" target="_blank">Стати бро</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="container">
+            <div class="works-title">
+                <h2>Недавні проекти</h2>
+            </div>
+            <div class="works-gallery">
+                <!-- Row 1 -->
+                <div id="row-0" class="cards-row">
+                    <!-- Card 1 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div id="row-1" class="cards-row">
+                    <!-- Card 4 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="works-card">
+                        <div class="card-order">
+                            <p>Тут може бути ваш дивовижної краси проект</p>
+                            <div class="order-button">
+                                <button onclick="orderModal()">Замовити</button>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="ads">
+                                <div class="ads-prices">
+                                    <p>Різні дрібниці</p>
+                                    <p>20 — 50$</p>
+                                </div>
+                                <div class="ads-prices">
+                                    <p>Лендінг</p>
+                                    <p>50 — 100$</p>
+                                </div>
+                                <div class="ads-prices">
+                                    <p>Сайт багатосторінковий</p>
+                                    <p>100 — 250$</p>
+                                </div>
+                                <div class="ads-prices">
+                                    <p>Front-end розробка</p>
+                                    <p>від 150$</p>
+                                </div>
+                            </div>
+                            <!-- Enable the button when the prices modal will be ready -->
+                            <!--<div class="ads-more">
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 3 -->
+                <div id="row-2" class="cards-row">
+                    <!-- Card 7 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 8 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 9 -->
+                    <div class="works-card">
+                        <div class="card-img">
+                            <img src="img/project1.jpg" alt="project1">
+                        </div>
+                        <div class="card-content">
+                            <div class="description">
+                                <p><b>Это текст описание в три строки.</b><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            </div>
+                            <div class="tags">
+                                <p>#logo</p><p>#этотег</p>
+                            </div>
+                            <div class="price">
+                                <div class="price-left">
+                                    <p>$50</p>
+                                    <p>1 day</p>
+                                </div>
+                                <button onclick="openWorks()">Бiльше</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="works-more">
+                <button onclick="loadMore()"><i class="fas fa-plus"></i><span>Показати більше проектів</span></button>
+            </div>
+
+            <div id="works-modal" class="works-modal">
+                <div class="w-content">
+                    <div class="container">
+                        <div class="w-title">
+                            <h3>Назва проекту</h3>
+                            <button onclick="closeWorks()"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="w-image">
+                            <img src="img/work_modal_1.jpg" alt="image">
+                        </div>
+                        <div class="w-text">
+                            <p><b>Технический директор Google</b> и известный технологический футуролог Рэй Курцвейл выступил в начале этого года с очередной порцией предсказаний.</p> 
+                            <p>Будучи одним из главных исследователей современных достижений в области искусственного интеллекта, Курцвейл публикует свои прогнозы с 1990-х годов, многие из которых стали академическими, пишет Inventure.</p> 
+                            <p>Но если еще пять лет назад он чаще оперировал длительными периодами (2030-е годы, 2040-е годы), то в последнее время в предположениях ученого появилась хронологическая стройность. Возможно, на точность повлияла его работа <a href="#">в самой большой интернет-компании</a>, где футуролог оказался на передовой многих инновационных разработок.</p>
+                        </div>
+                        <div class="w-price">
+                            <p>7775$</p>
+                            <p>25 days</p>
+                            <div class="w-tags">
+                                <p>#logo</p>
+                                <p>#этотег</p>
+                            </div>
+                        </div>
+                        <div class="order-button">
+                            <button onclick="orderModal()">Замовити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="join">
+        <div class="container">
+
+            <!-- Static duplicate of the last slide from #team section -->
+            <div class="team-box fade">
+                <div class="team-left">
+                    <img src="img/team-welcome.jpg" alt="person">
+                </div>
+                <div class="team-right">
+                    <div class="team-title-slider">
+                        <div class="team-title">
+                            <h2>Хочеш в команду?</h2>
+                        </div>
+                    </div>
+                    <p>Якщо ти — дизайнер, менеджер, front-end розробник — приєднуйся у веселу команду. 
+                        Ми працюємо дистанційно, без прив’язки до тісного офісу.</p>
+                    <p>Про нас <a class="text-a" href="#">пишуть</a>, що ми супер гуд. Хіба не фантастика?</p>
+                    <div class="bro-button">
+                        <a href="https://t.me/d_vovk" target="_blank">Стати бро</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="top-line">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <div class="header-elements">
+                    <div class="social">
+                        <a href="https://t.me/d_vovk "><i class="fab fa-telegram-plane"></i>Обсудити</a>
+                    </div>
+                    <div class="order-button">
+                        <button onclick="orderModal()">Замовити</button>
+                    </div>
+                    <div class="language">
+                        <a href="#"><i class="fas fa-globe-europe"></i>ua</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-line">
+                <p>© Kondratsky, 2020. Kyiv, Ukraine. All rights reserved.</p>
+                <p>E-mail: mailexample@gmail.com</p>
+                <a href="https://t.me/d_vovk">Політика конфіденційності</a>
+                <a href="https://t.me/d_vovk">Правила користування</a>
+            </div>
+            <div class="front-end">
+                <p>front-end dev</p>
+                <div class="front-end-link">
+                    <a href="https://hellnar.github.io/portfolio/portfolio.html"><i class="fas fa-meteor"></i>Stas Klymenko</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
